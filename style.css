@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+}
+.container {
+  position: relative;
+}
+.sidebar {
+  background-color: rgb(0, 101, 153);
+  width: 30%;
+  height: 100%;
+  position: fixed;
+  padding-top: 30px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.sidebar .logo {
+  text-align: center;
+  padding: 25px 0;
+  color: white;
+}
+.sidebar .logo img {
+  display: block;
+  margin: auto;
+  width: 80px;
+}
+.sidebar .logo a {
+  color: white;
+}
+
+.sidebar .logo h1 {
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+.navigation-bar ul {
+  padding-left: 30%;
+  list-style-type: none;
+}
+
+.navigation-bar ul a {
+  color: white;
+  font-size: 1.5rem;
+  line-height: 4.2rem;
+}
+.navigation-bar ul a:active,
+.navigation-bar ul a:hover {
+  color: yellow;
+}
+
+.container main {
+  margin-left: 30%;
+}
+.container main .slider {
+  width: 100%;
+  height: 100%;
+}
+.container main .slider img {
+  height: 100%;
+  width: 100%;
+}
+/*---------- Sections Style--------- */
+.container main .sections {
+  margin-top: 20px;
+  width: 100%;
+  padding: 70px 40px 20px 70px;
+}
+/* ----------Section one--------*/
+
+.section_one .welcome h1 {
+  font-size: 3.12rem;
+  margin-bottom: 30px;
+  color: rgb(0, 101, 153);
+}
+.section_one p {
+  line-height: 40px;
+  font-size: 1.5rem;
+  font-weight: 300;
+
+  margin-bottom: 30px;
+}
+/*---About Team style---*/
+
+.section_one .about_team {
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 40px;
+  padding-right: 15px;
+  display: flex;
+}
+
+.section_one .about_team .team-image {
+  width: 30%;
+  float: left;
+  order: 1;
+}
+.section_one .about_team .team-image img {
+  height: 500px;
+  padding-right: 15px;
+  width: 100%;
+}
+.section_one .about_team .team-info {
+  float: right;
+  width: 70%;
+  padding-bottom: 50px;
+  order: 2;
+}
+
+.about_team .team-info h2 {
+  font-size: 2.4rem;
+  color: rgb(0, 101, 153);
+  margin-bottom: 30px;
+}
+
+.about_team .team-info a {
+  padding: 18px 68px;
+  background-color: #2790c6;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.4rem;
+}
+.about_team a:hover {
+  background-color: #2790c6;
+}
+.clear-float {
+  clear: both;
+}
+
+/* ----------Section Two--------*/
+.sections .section_two .gallery-one,
+.sections .section_two .second-gallery,
+.sections .section_two .third-gallery {
+  margin-top: 60px;
+}
+.sections .section_two h1 {
+  color: #006599;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+}
+.section_two .gall-imgs {
+  width: 100%;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.section_two .gall-imgs img {
+  margin-right: 1%;
+  height: auto;
+}
+.section_two .gallery-one .gall-imgs img {
+  width: 19%;
+}
+.section_two .second-gallery .gall-imgs img {
+  width: 32%;
+}
+.section_two .third-gallery .gall-imgs img {
+  width: 24%;
+}
+/*------Start Contact Us-------*/
+.contact-us {
+}
+.contact-us h1 {
+  font-size: 3.12rem;
+  margin-bottom: 30px;
+  color: rgb(0, 101, 153);
+}
+.contact-us .inputs {
+  float: left;
+  padding-right: 20px;
+  width: 50%;
+  border-color: #0a6697;
+}
+
+.contact-us .more-info {
+  float: right;
+  width: 50%;
+}
+.contact-us input:not(.submit),
+.contact-us textarea {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 10px 0 10px 20px;
+  border: 1px solid #0a6697;
+}
+.contact-us input:focus,
+.contact-us textarea:focus {
+  outline: none !important;
+  border: 1px solid #2790c6;
+}
+.inputs ::placeholder {
+  color: #4286ab;
+  font-size: 1.3rem;
+}
+input[type="submit"] {
+  background-color: #006599;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.4rem;
+  padding: 18px 35px;
+}
+input[type="submit"]:hover {
+  background-color: #2790c6;
+}
+.contact-us p {
+  line-height: 40px;
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.clear-float {
+  clear: both;
+}
+
+/*------End Contact Us---------*/
+/*------Start footer-----------*/
+footer {
+  padding: 70px 40px 20px 70px;
+}
+footer p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #373a3c;
+}
+footer a {
+  color: #4286ab;
+  cursor: pointer;
+}
+/*------End footer-----------*/
+/* ==========================Media queries=================== */
+@media (max-width: 992px) {
+  .sidebar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 200px;
+  }
+
+  .sidebar .navigation-bar {
+    visibility: hidden;
+  }
+
+  .container main {
+    margin: 0;
+  }
+  .contact-us {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-us .inputs {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .contact-us .more-info {
+    float: none;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .container main .slider img {
+    margin-top: 200px;
+  }
+
+  .section_one .about_team {
+    display: flex;
+    flex-direction: column;
+  }
+  .section_one .about_team .team-info {
+    order: 1;
+    width: 100%;
+  }
+  .section_one .about_team .team-image {
+    order: 2;
+    width: 70%;
+  }
+}
+@media (max-width: 575px) {
+  .section_two .gall-imgs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px 10px;
+    grid-template-areas: ". ." ". ." ". .";
+  }
+  .section_two .gallery-one .gall-imgs img,
+  .section_two .second-gallery .gall-imgs img,
+  .section_two .third-gallery .gall-imgs img {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  .gall-imgs img {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+}
